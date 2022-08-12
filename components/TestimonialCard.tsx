@@ -1,12 +1,11 @@
-import { TestimonialCardIndividual, TestimonialCardDesc, TestimonialCardJob, TestimonialCardName, TestimonialPersonalContainer } from '../styles/TestimonialsStyles';
-import Image from 'next/image';
+import { TestimonialCardIndividual, TestimonialCardDesc, TestimonialCardJob, TestimonialCardName, TestimonialPersonalContainer, AvatarContainer, Avatar } from '../styles/TestimonialsStyles';
 
 export default function TestimonialCard({ descText, name, job, avatar }) {
     return (
         <TestimonialCardIndividual>
-            <div>
-                <Image src={avatar} alt='avatar' />
-            </div>
+            <AvatarContainer>
+                <Avatar src={avatar} alt='avatar' />
+            </AvatarContainer>
             <TestimonialCardDesc>
                 {descText}
             </TestimonialCardDesc>
