@@ -35,7 +35,7 @@ export default function useChangeAndFade() {
     const unsubscribe = setInterval(() => {
       changeFadeStatus();
       chooseText();
-    }, 4750);
+    }, 4650);
     return () => {
       clearTimeout(unsubscribe);
     };

@@ -2,18 +2,19 @@ import styled from "styled-components";
 import { NavButton } from "./NavBarStyles";
 
 export const IntroSection = styled.section`
-  min-height: calc(100vh - 80px);
   overflow: hidden;
   max-width: 100%;
-  padding: 5em 0;
+  padding: 5em 0 4em;
 `;
 export const IntroVideoContainer = styled.div`
   width: 400px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: visible;
+  margin: 0 auto;
   margin-bottom: -5rem;
 `;
 export const FirstVideo = styled.video`
@@ -29,6 +30,7 @@ export const IntroSecond = styled.div`
 
 export const IntroSecondTitle = styled.h2`
   font-size: var(--fs-h2);
+  font-weight: 900;
   color: var(--clr-dark);
   text-align: center;
   line-height: 1.2;
@@ -44,7 +46,8 @@ export const IntroSecondDesc = styled.p`
   text-align: center;
   font-weight: var(--fw-semi-reg);
   font-size: var(--fs-body);
-  margin: 0;
+  max-width: 30ch;
+  margin: 0 auto;
 `;
 
 export const IntroSecondButtonGrup = styled.div`
@@ -58,6 +61,10 @@ export const IntroDownloadButton = styled(NavButton)`
   font-size: var(--fs-body);
   font-weight: var(--fw-bold);
   padding: 0.7em 1.75em;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const IntroWatchButton = styled(IntroDownloadButton)`
@@ -67,4 +74,8 @@ export const IntroWatchButton = styled(IntroDownloadButton)`
   display: flex;
   align-items: center;
   gap: 0.3em;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
 `;

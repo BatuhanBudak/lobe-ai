@@ -23,8 +23,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "styles/NavBarStylest.js"
-, "styles/constants.js"  ],
+    "styles/NavBarStylest.js",
+    "styles/constants.js",
+    "styles/PlantsStyles.js"
+  ],
   "exclude": [
     "node_modules"
   ]

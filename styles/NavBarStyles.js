@@ -9,6 +9,7 @@ export const StyledHeader = styled.header`
   padding: 1em;
   width: 100%;
   background-color: var(--clr-white);
+  z-index: 9999;
 `;
 
 export const StyledLogo = styled.div`
