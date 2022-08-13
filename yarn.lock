@@ -1201,6 +1201,35 @@
   "resolved" "https://registry.npmjs.org/@rushstack/eslint-patch/-/eslint-patch-1.1.4.tgz"
   "version" "1.1.4"
 
+"@splidejs/react-splide@^0.7.8":
+  "integrity" "sha512-zXBIsa8v3h9iv8KKxEdbN+RveJKQU/VE7Iev9GoXiFxnCzN/luyySsF1FZz/lYw9B+eWiLXehOBcWLzLo+05ng=="
+  "resolved" "https://registry.npmjs.org/@splidejs/react-splide/-/react-splide-0.7.8.tgz"
+  "version" "0.7.8"
+  dependencies:
+    "@splidejs/splide" "^4.0.7"
+
+"@splidejs/splide-extension-auto-scroll@^0.4.2":
+  "integrity" "sha512-kIKRhs1Gj5a6xKEi/h/7i/G20+kJgpfzvU3nPyLrAUYdK3Q3w8kxJ4DgeMJHzlF5iachnPUe2zXdWMhZHCHYfg=="
+  "resolved" "https://registry.npmjs.org/@splidejs/splide-extension-auto-scroll/-/splide-extension-auto-scroll-0.4.2.tgz"
+  "version" "0.4.2"
+
+"@splidejs/splide-extension-grid@^0.4.1":
+  "integrity" "sha512-XM3pl5VKvmoybwZRrv4xE8Hff2mT6Chl9GnGd8nQogo4ZtTgxzqAZqBxLvhrl5UuUswIdmNoRmMeeEgx9twrvw=="
+  "resolved" "https://registry.npmjs.org/@splidejs/splide-extension-grid/-/splide-extension-grid-0.4.1.tgz"
+  "version" "0.4.1"
+
+"@splidejs/splide-extension-video@^0.7.1":
+  "integrity" "sha512-LrjgRCw+aW0AYohGssSLMrkUkFjX20Nuu94ymWothfP1Qj4NHiIPIk5XrntpK5DLG+5KNgSHMd8XON5jd1rwTA=="
+  "resolved" "https://registry.npmjs.org/@splidejs/splide-extension-video/-/splide-extension-video-0.7.1.tgz"
+  "version" "0.7.1"
+  dependencies:
+    "@vimeo/player" "^2.16.4"
+
+"@splidejs/splide@^4.0.7":
+  "integrity" "sha512-aJAOGJN2lwjwou3mxQofc3uhe+RXpw9in0WfysFX7AMT/mj7wSqoetfm41s7J8jU6FJ3ZWaLYgSJIpBAQ5wyqw=="
+  "resolved" "https://registry.npmjs.org/@splidejs/splide/-/splide-4.0.7.tgz"
+  "version" "4.0.7"
+
 "@swc/helpers@0.4.3":
   "integrity" "sha512-6JrF+fdUK2zbGpJIlN7G3v966PQjyx/dPt1T9km2wj+EUBqgrxCk3uX4Kct16MIm9gGxfKRcfax2hVf5jvlTzA=="
   "resolved" "https://registry.npmjs.org/@swc/helpers/-/helpers-0.4.3.tgz"
@@ -1304,6 +1333,14 @@
   dependencies:
     "@typescript-eslint/types" "5.33.0"
     "eslint-visitor-keys" "^3.3.0"
+
+"@vimeo/player@^2.16.4":
+  "integrity" "sha512-M8uMYiOwFkqD070/pO/CuRmwKvnHBmEZKckt5C2tAaMhlldzui+lUC5zMFzO0RDPmIXwg1WdDxaJnzuic6ll/A=="
+  "resolved" "https://registry.npmjs.org/@vimeo/player/-/player-2.17.1.tgz"
+  "version" "2.17.1"
+  dependencies:
+    "native-promise-only" "0.8.1"
+    "weakmap-polyfill" "2.0.4"
 
 "acorn-jsx@^5.3.2":
   "integrity" "sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ=="
@@ -2530,6 +2567,11 @@
   "resolved" "https://registry.npmjs.org/nanoid/-/nanoid-3.3.4.tgz"
   "version" "3.3.4"
 
+"native-promise-only@0.8.1":
+  "integrity" "sha512-zkVhZUA3y8mbz652WrL5x0fB0ehrBkulWT3TomAQ9iDtyXZvzKeEA6GPxAItBYeNYl5yngKRX612qHOhvMkDeg=="
+  "resolved" "https://registry.npmjs.org/native-promise-only/-/native-promise-only-0.8.1.tgz"
+  "version" "0.8.1"
+
 "natural-compare@^1.4.0":
   "integrity" "sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw=="
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
@@ -3192,6 +3234,11 @@
   "integrity" "sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA=="
   "resolved" "https://registry.npmjs.org/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz"
   "version" "2.3.0"
+
+"weakmap-polyfill@2.0.4":
+  "integrity" "sha512-ZzxBf288iALJseijWelmECm/1x7ZwQn3sMYIkDr2VvZp7r6SEKuT8D0O9Wiq6L9Nl5mazrOMcmiZE/2NCenaxw=="
+  "resolved" "https://registry.npmjs.org/weakmap-polyfill/-/weakmap-polyfill-2.0.4.tgz"
+  "version" "2.0.4"
 
 "which-boxed-primitive@^1.0.2":
   "integrity" "sha512-bwZdv0AKLpplFY2KZRX6TvyuN7ojjr7lwkg6ml0roIy9YeuSr7JS372qlNW18UQYzgYK9ziGcerWqZOmEn9VNg=="

@@ -9,6 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.8",
+    "@splidejs/splide-extension-auto-scroll": "^0.4.2",
+    "@splidejs/splide-extension-grid": "^0.4.1",
+    "@splidejs/splide-extension-video": "^0.7.1",
     "babel-preset-next": "^1.4.0",
     "framer-motion": "^7.0.1",
     "next": "12.2.4",

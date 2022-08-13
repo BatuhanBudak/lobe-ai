@@ -25,7 +25,8 @@
     "**/*.tsx",
     "styles/NavBarStylest.js",
     "styles/constants.js",
-    "styles/PlantsStyles.js"
+    "styles/PlantsStyles.js",
+    "styles/ExamplesStyles.js"
   ],
   "exclude": [
     "node_modules"

@@ -5,7 +5,7 @@ import { DescTitle, DescriptionDetails, GreenSpan } from "./DescriptionStyles";
 export const ShipSection = styled.section`
   overflow: hidden;
   max-width: 100%;
-  padding: 3em 0 4em;
+  padding: 3em 0 3em;
   position: relative;
   background-color: var(--clr-background);
 `;

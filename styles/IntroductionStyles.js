@@ -62,6 +62,8 @@ export const IntroDownloadButton = styled(NavButton)`
   font-weight: var(--fw-bold);
   padding: 0.7em 1.75em;
   cursor: pointer;
+  transition: 0.4s;
+  box-shadow: 0 10px 20px -8px transparent;
   &:hover {
     transform: scale(1.1);
   }

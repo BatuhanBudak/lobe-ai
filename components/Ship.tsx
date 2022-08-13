@@ -20,7 +20,7 @@ import python from '../public/icons/python-icon.svg';
 import tensorflow from '../public/icons/tensorflow.svg';
 import unity from '../public/icons/unity-new.svg';
 import useLogoName from '../hooks/useLogoName';
-
+import Testimonials from '../components/Testimonials';
 export default function Ship() {
   const [textName, changeTextName, resetTextName, fadeState] = useLogoName();
 
@@ -85,6 +85,7 @@ export default function Ship() {
           </BubbleContainer>
         </ShipBubbles>
       </ShipBubblesContainer>
+      <Testimonials />
     </ShipSection >
   )
 }

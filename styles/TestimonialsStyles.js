@@ -9,7 +9,7 @@ export const TestimonialsContainer = styled(MediaScroller)`
   grid-auto-flow: column;
   grid-auto-columns: 80%;
   padding-inline: 1.5rem;
-  padding-block: 5rem 11.25rem;
+  padding-block: 1rem 4rem;
   gap: var(--spacer);
   overflow-x: auto;
   scrollbar-width: none;
@@ -24,7 +24,8 @@ export const TestimonialCardIndividual = styled.div`
   padding: 1.5rem;
   border-radius: 20px;
   align-items: center;
-  box-shadow: 0 80px 120px -40px rgba(0, 0, 0, 0.1);
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0 5px 80px -40px rgba(0, 0, 0, 0.1);
   &:hover {
     transform: scale3d(1.02, 1.02, 1.02);
   }

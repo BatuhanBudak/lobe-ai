@@ -5,8 +5,8 @@ import InfoCards from '../components/InfoCards';
 import Introduction from '../components/Introduction';
 import Plants from '../components/Plants';
 import Ship from '../components/Ship';
-import Testimonials from '../components/Testimonials';
-
+import Examples from '../components/Examples';
+import Download from '../components/Download'
 const Home: NextPage = () => {
   return (
     <>
@@ -16,7 +16,8 @@ const Home: NextPage = () => {
       <InfoCards />
       <Plants />
       <Ship />
-      <Testimonials />
+      <Examples />
+      <Download />
     </>
   )
 }
