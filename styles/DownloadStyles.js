@@ -10,7 +10,6 @@ export const DownloadSection = styled.section`
   flex-direction: column;
   padding: 3.5rem 0;
   max-width: 100%;
-  border-bottom: 1px solid #cccccc;
 `;
 
 export const DownloadleTitle = styled(ExampleTitle)`

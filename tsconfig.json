@@ -26,7 +26,8 @@
     "styles/NavBarStylest.js",
     "styles/constants.js",
     "styles/PlantsStyles.js",
-    "styles/ExamplesStyles.js"
+    "styles/ExamplesStyles.js",
+    "styles/DownloadStyles.js"
   ],
   "exclude": [
     "node_modules"

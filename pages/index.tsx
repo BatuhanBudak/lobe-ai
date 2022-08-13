@@ -7,6 +7,7 @@ import Plants from '../components/Plants';
 import Ship from '../components/Ship';
 import Examples from '../components/Examples';
 import Download from '../components/Download'
+import Footer from '../components/Footer';
 const Home: NextPage = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <Ship />
       <Examples />
       <Download />
+      <Footer />
     </>
   )
 }

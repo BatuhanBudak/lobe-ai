@@ -10,6 +10,10 @@ export const StyledHeader = styled.header`
   width: 100%;
   background-color: var(--clr-white);
   z-index: 9999;
+  @supports (backdrop-filter: blur(1rem)) {
+    background: hsl(var(--clr-white) / 0.05);
+    backdrop-filter: blur(1.5rem);
+  }
 `;
 
 export const StyledLogo = styled.div`
@@ -47,13 +51,12 @@ export const NavList = styled.ul`
   list-style: none;
   display: flex;
   height: 100%;
-  font-size: var(--fs-h3);
+  font-size: var(--fs-body);
   padding: 1em 1.25em;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
   margin: 0;
-
   border-bottom: 0.2rem solid rgba(22, 224, 189, 0);
 `;
 
@@ -85,7 +88,7 @@ export const NavLink = styled.a`
 export const NavButton = styled.button`
   color: var(--clr-white);
   background-color: var(--clr-accent);
-  font-size: var(--fs-h3);
+  font-size: var(--fs-body);
   width: 100%;
   text-align: center;
   border-radius: 50px;
