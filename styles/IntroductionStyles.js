@@ -5,6 +5,12 @@ export const IntroSection = styled.section`
   overflow: hidden;
   max-width: 100%;
   padding: 5em 0 4em;
+  @media (min-width: 1000px) {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+  }
 `;
 export const IntroVideoContainer = styled.div`
   width: 400px;
@@ -16,6 +22,14 @@ export const IntroVideoContainer = styled.div`
   overflow: visible;
   margin: 0 auto;
   margin-bottom: -5rem;
+
+  @media (min-width: 650px) {
+    width: 500px;
+  }
+  @media (min-width: 1000px) {
+    order: 2;
+    margin: unset;
+  }
 `;
 export const FirstVideo = styled.video`
   max-width: 100%;
@@ -57,10 +71,11 @@ export const IntroSecondButtonGrup = styled.div`
 `;
 
 export const IntroDownloadButton = styled(NavButton)`
+  position: relative;
   width: unset;
   font-size: var(--fs-body);
   font-weight: var(--fw-bold);
-  padding: 0.7em 1.75em;
+  padding: 0.7em 1.4em;
   cursor: pointer;
   transition: 0.4s;
   box-shadow: 0 10px 20px -8px transparent;
@@ -70,6 +85,7 @@ export const IntroDownloadButton = styled(NavButton)`
 `;
 
 export const IntroWatchButton = styled(IntroDownloadButton)`
+  position: relative;
   color: var(--clr-accent);
   background-color: transparent;
   border: none;

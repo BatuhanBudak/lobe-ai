@@ -8,6 +8,16 @@ export const ShipSection = styled.section`
   padding: 3em 0 3em;
   position: relative;
   background-color: var(--clr-background);
+
+  @media (min-width: 1000px) {
+    padding: 3em;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 export const ContentContainer = styled.div`
   & > h2,
@@ -22,6 +32,9 @@ export const ShipTitle = styled(DescTitle)``;
 export const ShipDetails = styled(DescriptionDetails)`
   line-height: 1.3;
   margin-bottom: 2em;
+  @media (min-width: 1000px) {
+    max-width: 700px;
+  }
 `;
 
 export const ChangingTitle = styled.span`
@@ -109,6 +122,13 @@ export const BubbleContainer = styled.div`
     top: 730px;
     transition-delay: 320ms;
   }
+
+  @media (min-width: 650px) {
+    & > figure > span {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  }
 `;
 
 export const Bubble = styled.figure`
@@ -145,6 +165,10 @@ export const Bubble = styled.figure`
   }};
   padding: 0;
   margin: 0;
+  @media (min-width: 650px) {
+    width: 100px;
+    height: 100px;
+  }
 `;
 
 export const Icon = styled(Image)`

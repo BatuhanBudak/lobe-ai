@@ -18,6 +18,11 @@ export const FooterContent = styled.div`
   justify-content: space-between;
   max-width: 892px;
   padding: 62px 24px;
+
+  @media (min-width: 650px) {
+    flex-wrap: nowrap;
+    gap: 1em;
+  }
 `;
 
 export const FooterList = styled.ul`
@@ -27,11 +32,17 @@ export const FooterList = styled.ul`
   list-style: none;
   text-align: left;
   margin-bottom: 3rem;
+  width: 35%;
 
   &:nth-child(2n + 1) {
     margin-right: 2rem;
   }
-  width: 35%;
+  @media (min-width: 650px) {
+    &:nth-child(2n + 1) {
+      margin-right: 0;
+    }
+    padding-inline: 0.5rem;
+  }
 `;
 export const FooterListItem = styled.li`
   text-align: left;
@@ -80,9 +91,24 @@ export const FooterRights = styled.div`
     width: 100%;
     margin-bottom: 1em;
   }
+  @media (min-width: 650px) {
+    align-self: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    order: -1;
+    & > ul {
+      padding: 0;
+    }
+    & > ul > li {
+      text-align: left;
+    }
+  }
 `;
 export const LogoContainer = styled.div`
   width: 196px;
   height: 26px;
   margin-bottom: 2.5rem;
+  @media (min-width: 650px) {
+    min-width: 170px;
+  }
 `;

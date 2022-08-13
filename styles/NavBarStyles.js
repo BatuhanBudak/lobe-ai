@@ -14,6 +14,9 @@ export const StyledHeader = styled.header`
     background: hsl(var(--clr-white) / 0.05);
     backdrop-filter: blur(1.5rem);
   }
+  @media (min-width: 800px) {
+    gap: 2em;
+  }
 `;
 
 export const StyledLogo = styled.div`
@@ -44,6 +47,15 @@ export const NavBar = styled.nav`
     background: hsl(var(--clr-white) / 0.05);
     backdrop-filter: blur(1.5rem);
   }
+  @media (min-width: 800px) {
+    position: static;
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: none;
+    background: inherit;
+    backdrop-filter: none;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -58,11 +70,30 @@ export const NavList = styled.ul`
   align-items: flex-start;
   margin: 0;
   border-bottom: 0.2rem solid rgba(22, 224, 189, 0);
+  @media (min-width: 800px) {
+    visibility: visible;
+    display: unset;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @media (min-width: 1000px) {
+    justify-content: center;
+    gap: 2em;
+  }
 `;
 
 export const NavItem = styled.li`
   margin-block: 1em;
   width: 100%;
+  @media (min-width: 800px) {
+    margin: 0;
+    width: unset;
+    background-color: transparent;
+  }
 `;
 
 export const NavLink = styled.a`
@@ -83,6 +114,12 @@ export const NavLink = styled.a`
 
     transform: translateY(-1px);
   }
+  @media (min-width: 650px) {
+    font-size: 18px;
+  }
+  @media (min-width: 1000px) {
+    font-size: 18px;
+  }
 `;
 
 export const NavButton = styled.button`
@@ -96,6 +133,16 @@ export const NavButton = styled.button`
   padding: 0.5em 1em;
   font-weight: 600;
   margin-block: 1.25em;
+  @media (min-width: 800px) {
+    width: unset;
+    margin-block: unset;
+    font-size: 18px;
+  }
+  @media (min-width: 1000px) {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 `;
 
 export const NavToggle = styled.button`
@@ -124,7 +171,6 @@ export const Hamburger = styled.span`
   height: 3px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
-
   transform: ${({ navOpen }) => (navOpen ? "rotate(.625turn)" : "none")};
 
   &::before,

@@ -16,18 +16,24 @@ import {
 
 } from '../styles/DescriptionStyles';
 import screenShot from '../public/screenshot.jpg';
+import screenShot2x from '../public/screenshot@2x.jpg';
 import home from '../public/icons/Home.jpg';
 import block from '../public/icons/Anywhere.jpg';
 import lock from '../public/icons/Private.jpg';
-
+import useScreenSize from "../hooks/useScreenSize";
 
 export default function Description() {
+
+    const windowWidth = useScreenSize();
+    const breakPoint = 1000;
+
     return (
         <DescriptionSection>
             <DescTitle>Machine learning made <GreenSpan>easy</GreenSpan></DescTitle>
             <DescriptionDetails>Lobe has everything you need to bring your machine learning ideas to life. Just show it examples of what you want it to learn, and it automatically trains a custom machine learning model that can be shipped in your app.</DescriptionDetails>
             <DescScreenShootCont>
-                <DescScreenShoot src={screenShot} alt='' />
+                {windowWidth < breakPoint && <DescScreenShoot src={screenShot} alt='screenshot' />}
+                {windowWidth >= breakPoint && <DescScreenShoot src={screenShot2x} alt='screenshot' />}
             </DescScreenShootCont>
             <DescDetailsContainer>
                 <DescDetailContainer>
@@ -60,6 +66,7 @@ export default function Description() {
                     </div>
                 </DescDetailContainer>
             </DescDetailsContainer>
+
             <DescDetailsSubTitle><GreenSpan>Project </GreenSpan>Templates</DescDetailsSubTitle>
             <DescriptionDetails>Lobe will automatically select the right machine learning architecture for your project. Image classification is available now, with more templates coming soon.</DescriptionDetails>
         </DescriptionSection>
