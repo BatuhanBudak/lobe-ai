@@ -148,7 +148,6 @@ export const NavButton = styled.button`
 export const NavToggle = styled.button`
   padding: 0.5em;
   cursor: pointer;
-  ${"" /* position: ${(props) => (props.navOpen ? "fixed" : "static")}; */}
   right: 1em;
   top: 2.5em;
   z-index: 1000;
