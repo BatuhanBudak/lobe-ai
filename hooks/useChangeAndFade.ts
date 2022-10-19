@@ -41,5 +41,5 @@ export default function useChangeAndFade() {
     };
   }, [textArray, changeFadeStatus]);
 
-  return { fadeState, animatedText };
+  return [ fadeState, animatedText ] as const;
 }

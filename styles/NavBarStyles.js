@@ -8,14 +8,43 @@ export const StyledHeader = styled.header`
   align-items: center;
   padding: 1em;
   width: 100%;
-  background-color: var(--clr-white);
   z-index: 9999;
-  @supports (backdrop-filter: blur(1rem)) {
-    background: hsl(var(--clr-white) / 0.05);
-    backdrop-filter: blur(1.5rem);
-  }
+
   @media (min-width: 800px) {
     gap: 2em;
+  }
+`;
+
+export const Blur = styled.div`
+  visibility: ${(props) => (props.navOpen ? "visible" : "hidden")};
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 554.188px;
+  background: hsla(0, 0%, 100%, 0.97);
+  @supports (backdrop-filter: blur(20px)) {
+    background-color: hsla(0, 0%, 100%, 0.8);
+    backdrop-filter: blur(20px);
+  }
+  @media (min-width: 50em) {
+    height: unset;
+    bottom: 0;
+    visibility: visible;
+  }
+`;
+
+export const BlurMob = styled.div`
+  visibility: ${(props) => (props.navOpen ? "hidden" : "visible")};
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: hsla(0, 0%, 100%, 0.97);
+  @supports (backdrop-filter: blur(20px)) {
+    background-color: hsla(0, 0%, 100%, 0.8);
+    backdrop-filter: blur(20px);
   }
 `;
 
@@ -24,11 +53,12 @@ export const StyledLogo = styled.div`
   height: 52px;
   display: flex;
   align-items: center;
+  position: relative;
 `;
 
 export const NavBar = styled.nav`
   position: absolute;
-  background: var(--clr-dark);
+
   color: var(--clr-dark);
   top: ${({ navOpen }) => (navOpen ? "80px " : "0")};
   left: 0;
@@ -41,19 +71,19 @@ export const NavBar = styled.nav`
   opacity: ${({ navOpen }) => (navOpen ? "opacity(1)" : "opacity(0)")};
   transition: all 250ms ease;
   transform-origin: top right;
-  background: white;
   box-shadow: var(--bs);
-  @supports (backdrop-filter: blur(1rem)) {
-    background: hsl(var(--clr-white) / 0.05);
-    backdrop-filter: blur(1.5rem);
-  }
+  // background-color: transparent;
+  // @supports (backdrop-filter: blur(4rem)) {
+  //   background: hsla(0, 0%, 100%, 0.8);
+  //   backdrop-filter: blur(4rem);
+  // }
   @media (min-width: 800px) {
     position: static;
     visibility: visible;
     opacity: 1;
     transform: scale(1);
     box-shadow: none;
-    background: inherit;
+    background-color: transparent;
     backdrop-filter: none;
   }
 `;
@@ -69,9 +99,11 @@ export const NavList = styled.ul`
   justify-content: space-evenly;
   align-items: flex-start;
   margin: 0;
+  // background-color: hsla(0, 0%, 100%, 0.8);
   border-bottom: 0.2rem solid rgba(22, 224, 189, 0);
   @media (min-width: 800px) {
     visibility: visible;
+    backgroundcolor: transparent;
     display: unset;
     padding: 0;
     margin: 0;

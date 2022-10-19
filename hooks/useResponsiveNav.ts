@@ -37,5 +37,5 @@ export default function useResponsiveNav() {
     return () => window.removeEventListener("resize", handleResize);
   }, [hasWindow, getWindowWidth, handleResize]);
 
-  return [navToggled, windowWidth, toggleNav, closeNav];
+  return [navToggled, windowWidth, toggleNav, closeNav] as const;
 }

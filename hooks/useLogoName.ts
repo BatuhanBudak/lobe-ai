@@ -20,5 +20,5 @@ export default function useLogoName() {
     setTextName("Anywhere");
   }
 
-  return [textName, changeTextName, resetTextName, fadeState];
+  return [textName, changeTextName, resetTextName, fadeState] as const;
 }

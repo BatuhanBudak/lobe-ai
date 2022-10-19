@@ -29,6 +29,7 @@ export const MediaScroller = styled.div`
   }
   @media (min-width: 1100px) {
     max-width: 1088px;
+    margin: 0 auto;
   }
 `;
 

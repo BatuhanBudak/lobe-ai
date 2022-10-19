@@ -5,14 +5,14 @@
 }
 
 :root {
-  --ff-primary: 'Roboto', sans-serif;
-  --ff-secondary: 'Playfair Display', serif;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Playfair Display", serif;
 
   --fw-reg: 400;
   --fw-semi-reg: 500;
   --fw-bold: 700;
 
-  --clr-white: #fff;
+  --clr-white: rgb(255, 255, 255);
   --clr-grey: #767676;
   --clr-light-grey: #eef0f2;
   --clr-dark: #333;
@@ -32,7 +32,6 @@
     --fs-h2: 3rem;
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
-
   }
 }
 
@@ -51,7 +50,6 @@ html {
   scroll-behavior: smooth;
   padding: 0;
   margin: 0;
-
 }
 
 body {
@@ -71,14 +69,13 @@ main {
   padding: 3em 2em 5em;
 }
 
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
 ::selection {
-  background: rgba(0, 230, 184, .2);
+  background: rgba(0, 230, 184, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {

@@ -54,6 +54,7 @@ export const IntroSecondGreen = styled.span`
   display: block;
   color: var(--clr-accent);
   transition: opacity ease-in;
+
   opacity: ${({ fadeState }) => (fadeState ? 0 : 1)};
 `;
 export const IntroSecondDesc = styled.p`
@@ -62,6 +63,7 @@ export const IntroSecondDesc = styled.p`
   font-size: var(--fs-body);
   max-width: 30ch;
   margin: 0 auto;
+  margin-bottom: 1rem;
 `;
 
 export const IntroSecondButtonGrup = styled.div`
