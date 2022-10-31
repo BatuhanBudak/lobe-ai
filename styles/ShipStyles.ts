@@ -2,6 +2,11 @@ import styled from "styled-components";
 import Image from "next/image";
 import { DescTitle, DescriptionDetails, GreenSpan } from "./DescriptionStyles";
 
+interface Props {
+  readonly fadeState?: boolean;
+  readonly logo?: string
+}
+
 export const ShipSection = styled.section`
   overflow: hidden;
   max-width: 100%;
@@ -37,7 +42,7 @@ export const ShipDetails = styled(DescriptionDetails)`
   }
 `;
 
-export const ChangingTitle = styled.span`
+export const ChangingTitle = styled.span<Props>`
   transition: opacity ease-in;
   opacity: ${({ fadeState }) => (fadeState ? 0 : 1)};
 `;
@@ -131,7 +136,7 @@ export const BubbleContainer = styled.div`
   }
 `;
 
-export const Bubble = styled.figure`
+export const Bubble = styled.figure<Props>`
   width: 90px;
   height: 90px;
   border-radius: 32px;
