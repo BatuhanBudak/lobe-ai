@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { NavButton } from "./NavBarStyles";
 
+interface Props {
+  readonly fadeState: boolean;
+}
+
 export const IntroSection = styled.section`
   overflow: hidden;
   max-width: 100%;
@@ -50,7 +54,7 @@ export const IntroSecondTitle = styled.h2`
   line-height: 1.2;
   margin-block: 0.3em;
 `;
-export const IntroSecondGreen = styled.span`
+export const IntroSecondGreen = styled.span<Props>`
   display: block;
   color: var(--clr-accent);
   transition: opacity ease-in;
