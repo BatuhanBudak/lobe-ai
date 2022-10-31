@@ -1,5 +1,8 @@
 import styled from "styled-components";
 
+interface Props {
+  readonly navOpen: boolean;
+}
 export const StyledHeader = styled.header`
   display: flex;
   position: fixed;
@@ -9,13 +12,12 @@ export const StyledHeader = styled.header`
   padding: 1em;
   width: 100%;
   z-index: 9999;
-
   @media (min-width: 800px) {
     gap: 2em;
   }
 `;
 
-export const Blur = styled.div`
+export const Blur = styled.div<Props>`
   visibility: ${(props) => (props.navOpen ? "visible" : "hidden")};
   position: absolute;
   top: 0;
@@ -34,7 +36,7 @@ export const Blur = styled.div`
   }
 `;
 
-export const BlurMob = styled.div`
+export const BlurMob = styled.div<Props>`
   visibility: ${(props) => (props.navOpen ? "hidden" : "visible")};
   position: absolute;
   top: 0;
@@ -56,7 +58,7 @@ export const StyledLogo = styled.div`
   position: relative;
 `;
 
-export const NavBar = styled.nav`
+export const NavBar = styled.nav<Props>`
   position: absolute;
 
   color: var(--clr-dark);
@@ -72,11 +74,6 @@ export const NavBar = styled.nav`
   transition: all 250ms ease;
   transform-origin: top right;
   box-shadow: var(--bs);
-  // background-color: transparent;
-  // @supports (backdrop-filter: blur(4rem)) {
-  //   background: hsla(0, 0%, 100%, 0.8);
-  //   backdrop-filter: blur(4rem);
-  // }
   @media (min-width: 800px) {
     position: static;
     visibility: visible;
@@ -88,7 +85,7 @@ export const NavBar = styled.nav`
   }
 `;
 
-export const NavList = styled.ul`
+export const NavList = styled.ul<Props>`
   visibility: ${(props) => (props.navOpen ? "visible" : "hidden")};
   list-style: none;
   display: flex;
@@ -99,7 +96,6 @@ export const NavList = styled.ul`
   justify-content: space-evenly;
   align-items: flex-start;
   margin: 0;
-  // background-color: hsla(0, 0%, 100%, 0.8);
   border-bottom: 0.2rem solid rgba(22, 224, 189, 0);
   @media (min-width: 800px) {
     visibility: visible;
@@ -193,7 +189,7 @@ export const NavToggle = styled.button`
   justify-content: center;
 `;
 
-export const Hamburger = styled.span`
+export const Hamburger = styled.span<Props>`
   display: block;
   position: relative;
   background-color: var(--clr-dark);

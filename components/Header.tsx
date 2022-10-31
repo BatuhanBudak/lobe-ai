@@ -28,7 +28,7 @@ export default function Header() {
       );
     } else {
       return (
-        <StyledHeader navToggled={navToggled}>
+        <StyledHeader>
           <Blur navOpen={navToggled}></Blur>
           <BlurMob navOpen={navToggled} />
           <StyledLogo>
@@ -37,7 +37,6 @@ export default function Header() {
           <NavToggle
             aria-expanded={navToggled}
             onClick={toggleNav}
-            navOpen={navToggled}
             aria-controls="primary-navigation"
           >
             <Hamburger navOpen={navToggled}></Hamburger>
