@@ -14,12 +14,11 @@ import {
 export default function SplideCarouselSecond() {
   const SPLIDE_OPTIONS = {
     gap: "10px",
-    direction: "rtl",
     arrows: false,
     pagination: false,
     drag: false,
     video: {
-      autoplay: false,
+      autoplay: true,
       loop: true,
       mute: true,
       hideControls: true,
